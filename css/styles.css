@@ -2,50 +2,109 @@
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styling for all our elements 
+    by doing this we are saving time and not having
+    to write the same styling over and over again
+*/
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px ;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
 }
 
 /* Styling the navigation section  */
 
-nav{
-    background-color: #111;
-    color: white;
-    padding: 20px 50px;
-}
-
-.navTop{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 80px;
+    background: #eaebe3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-/*  styling the search  */
-.search{
+#navbar{
     display: flex;
     align-items: center;
-    background-color: gray;
-    padding: 10px 20px;
-    border-radius : 10px;
-    cursor: pointer;
+    justify-content: center;
 }
 
-.search:hover{
-    background-color: white;
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
 }
 
-.searchInput{
-    border: none;
-    background-color: transparent;
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 520;
+    color: #1a1a1a;
+    transition: 0.3s ease;
 }
 
-/* after we styled the searchInput we could not see the tex
-to make the user see the text, we do this: we style the placeHolder */
+/* Styling the button at the nav  */
+/* 
 
-.searchInput::placeholder{
-    color: lightgray;
-}
 
-.limitedffer{
-    font-size: 1.2rem;
-    border-bottom: 2px solid green;
-    cursor: pointer;
+/* The hover effect for our nav links  
+and the effect that shows we're in a particular page
+*/
+
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: #088178;
+} 
+
+/* underline effect when we hover over our li */
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
