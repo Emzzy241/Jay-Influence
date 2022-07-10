@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --orange: #ff7800;
+    --green: rgb(0, 100, 0);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --box-shadowNav: 0 5px 10px rgba(0, 0, 0, 0.1);
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: .2rem solid var(--black);
+}
+
 /* Global styling for all our elements 
     by doing this we are saving time and not having
     to write the same styling over and over again
@@ -148,3 +160,61 @@ and the effect that shows we're in a particular page
     font-weight: 700;
     font-size: 15px;
 }
+
+
+/* Styling the review sections  */
+.review{
+    margin-top: 10rem;
+}
+.review .heading h2{
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.2rem;
+}
+.review .review-slider {
+    padding: 1rem;
+}
+
+.review .review-slider .box {
+    background: #fff;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+}
+
+.review .review-slider .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.review .review-slider .box img {
+    height: 10rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.0rem;
+}
+
+.review .review-slider .box h3 {
+    padding-bottom: 0.5rem;
+    color: var(--black);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.review .review-slider .box .stars i {
+    color: var(--orange);
+    font-size: 1.0rem;
+}
+
