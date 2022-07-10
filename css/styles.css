@@ -1,4 +1,51 @@
-body{
+*{
     font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
 
+/* Styling the navigation section  */
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  styling the search  */
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius : 10px;
+    cursor: pointer;
+}
+
+.search:hover{
+    background-color: white;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+/* after we styled the searchInput we could not see the tex
+to make the user see the text, we do this: we style the placeHolder */
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.limitedffer{
+    font-size: 1.2rem;
+    border-bottom: 2px solid green;
+    cursor: pointer;
 }
