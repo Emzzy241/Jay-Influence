@@ -213,13 +213,13 @@ and the effect that shows we're in a particular page
     padding: 1rem 0;
     line-height: 1.8;
     color: var(--light-color);
-    font-size: 1.0rem;
+    font-size: 1.5rem;
 }
 
 .review .review-slider .box h3 {
     padding-bottom: 0.5rem;
     color: var(--black);
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     text-align: center;
 }
 
@@ -294,6 +294,23 @@ and the effect that shows we're in a particular page
     color: #088178;
 }
 
+
+/* Styling the still in doubt section  */
+
+#doubt .brandTalk2 p{
+    text-align: center;
+    font-weight: 600;
+}
+
+#doubt .brandTalk2 h1 {
+    text-align: center;
+    font-weight: 800;    
+    
+}
+
+#doubt .brandTalk2 h1 span {
+    color: #088178;
+}
 
 
 
@@ -427,6 +444,11 @@ and the effect that shows we're in a particular page
         padding: 2rem;
     }
 
+    #doubt .brandTalk2 h1 {
+        font-size: 4.2rem;
+    }
+
+
 }
 
 @media(max-width: 450px) {
@@ -493,5 +515,16 @@ and the effect that shows we're in a particular page
         font-size: 1.5rem;
         font-weight: 500;
     }
+
+    #doubt .brandTalk2 {
+
+        text-align: center;
+    }
+
+    #doubt .brandTalk2 h1 {
+        font-size: 4.2rem;
+        font-weight: 600;
+        
+    } 
 
 }
