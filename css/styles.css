@@ -145,8 +145,13 @@ and the effect that shows we're in a particular page
     padding-bottom: 15px;
 }
 
+#hero h2{
+    font-weight: 600;
+}
+
 #hero h1{
     color: #088178;
+    font-weight: 900;
 }
 
 #hero button{
@@ -225,12 +230,12 @@ and the effect that shows we're in a particular page
 }
 
 #familiar .col-md-6 h6{
-    font-weight: bolder;
+    font-weight: 750;
     font-size: 0.8rem;
 }
 
 #familiar .col-md-6 h2{
-    font-weight: bolder;
+    font-weight: 750;
 }
 
 #familiar .col-md-6 .knowJay{
@@ -249,12 +254,12 @@ and the effect that shows we're in a particular page
 }
 
 #experience .col-md-6 h6{
-    font-weight: bolder;
+    font-weight: 750;
     font-size: 0.8rem;
 }
 
 #experience .col-md-6 h2{
-    font-weight: bolder;
+    font-weight: 750;
 }
 
 #experience .col-md-6 .jayWork{
@@ -264,4 +269,22 @@ and the effect that shows we're in a particular page
 #experience .col-md-6 .jayWork h4{
     font-weight: bolder;
     
+}
+
+/* Styling the brand section  */
+
+#fewBrands{
+    margin-top: 10rem;
+}
+
+/* styling the brand talk */
+
+
+#fewBrands  .brandTalk h1{
+    text-align: center;
+    font-weight: 900;
+}
+
+#fewBrands  .brandTalk h1 span{
+    color: #088178;
 }
