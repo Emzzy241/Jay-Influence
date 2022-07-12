@@ -372,21 +372,83 @@ and the effect that shows we're in a particular page
 }
 
 /* Styling the contact section  */
-#contact{
+#contact {
     text-align: center;
 }
 
-#contact .contactLinks i{
+#contact .contactLinks i {
     margin-top: 5rem;
     font-size: 2.2rem;
     margin-bottom: 5rem;
+    margin-right: 1.9rem;
+}
+
+/* Styling the footer section  */
+
+.footer .box-container {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
 }
 
 
 
+.footer .box-container .box h4 {
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+
+}
+
+
+.footer .box-container .box p {
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
 
 
+.footer .box-container .box h2 {
+    margin-top: 5rem;
+    font-size: 2.1rem;
+    color: #fff;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.footer .box-container .box .links {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    text-decoration: none;
+    line-height: 1.0rem;
+}
+
+
+.footer .box-container .box .links:hover{
+    color: #fff;
+}
+
+.footer .box-container .box h5 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box i {
+    font-size: 1.8rem;
+    color: #666;
+}
+
+
+.footer .box-container .box i:hover{
+    color: #fff;
+}
 
 
 
@@ -457,6 +519,7 @@ and the effect that shows we're in a particular page
     section {
         padding: 2rem;
     }
+
 
 
 }
@@ -627,6 +690,19 @@ and the effect that shows we're in a particular page
         margin-top: 6rem;
         margin-bottom: 10rem;
     }
+
+    .butnn{
+        padding: 2.0rem 1rem 2rem 2rem;
+    }
+
+    .butnn a {
+        text-transform: none;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    
 
 
 
