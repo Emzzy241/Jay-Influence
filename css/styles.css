@@ -407,8 +407,19 @@ and the effect that shows we're in a particular page
     color: #666;
     font-size: 1.3rem;
     font-weight: 500;
+
 }
 
+.footer .box-container .box h6 {
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.footer .box-container .box img {
+    margin-top: 2.5rem;
+}
 
 
 .footer .box-container .box h2 {
@@ -429,7 +440,7 @@ and the effect that shows we're in a particular page
 }
 
 
-.footer .box-container .box .links:hover{
+.footer .box-container .box .links:hover {
     color: #fff;
 }
 
@@ -446,22 +457,67 @@ and the effect that shows we're in a particular page
 }
 
 
-.footer .box-container .box i:hover{
+.footer .box-container .box i:hover {
     color: #fff;
 }
 
+/* Styling the product.html  */
+/* the shop indicator */
+.shop {
+    height: 7rem;
+    width: 100%;
+
+}
 
 
+.shop h4 {
+    margin-top: 1rem;
+    font-weight: 570;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+/* Stylling the info section  */
+
+.info {
+    background: lightblue;
+    height: 5.0rem;
+    margin-top: 15rem;
+}
+
+.info p {
+    margin-top: 0.1rem;
+    font-weight: 450;
+    font-size: 1.3rem;
+}
 
 
+/* Styling the Services  */
 
+.products {
+    margin-top: 5rem;
+}
 
+.products img{
+    margin-top: 4rem;
+}
 
+.productTalk {
+    padding: 1rem;
+}
 
+.productTalk h4 {
+    font-weight: 548;
+}
 
+.productTalk p {
+    font-weight: 400;
+    font-size: 1.0rem;
+}
 
-
-
+.productTalk h6 {
+    font-size: 1.3rem;
+}
 
 
 
@@ -691,7 +747,7 @@ and the effect that shows we're in a particular page
         margin-bottom: 10rem;
     }
 
-    .butnn{
+    .butnn {
         padding: 2.0rem 1rem 2rem 2rem;
     }
 
@@ -701,8 +757,15 @@ and the effect that shows we're in a particular page
         color: white;
         font-size: 1.5rem;
     }
-    
-    
+
+
+    /* In Product.html  */
+    .products .col-md-3 img{
+        margin-top: 3rem;
+    }
+    .productTalk h6 {
+        font-size: 1.8rem;
+    }
 
 
 
