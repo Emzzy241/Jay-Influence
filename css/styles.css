@@ -371,9 +371,16 @@ and the effect that shows we're in a particular page
     font-size: 1.0rem;
 }
 
+/* Styling the contact section  */
+#contact{
+    text-align: center;
+}
 
-
-
+#contact .contactLinks i{
+    margin-top: 5rem;
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+}
 
 
 
