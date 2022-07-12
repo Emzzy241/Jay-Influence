@@ -284,6 +284,16 @@ and the effect that shows we're in a particular page
 
 /* styling the brand talk */
 
+#fewBrands .brandTalk h1 {
+    font-size: 4.2rem;
+}
+
+#fewBrands .container .col-md-3 img {
+    padding: 4rem 5rem ;
+    height: 19rem;
+}
+
+
 
 #fewBrands .brandTalk h1 {
     text-align: center;
@@ -405,15 +415,20 @@ and the effect that shows we're in a particular page
         width: 100%;
     }
 
+    #fewBrands .brandTalk {
+
+        text-align: center;
+    }
+
     #fewBrands .brandTalk h1 {
         font-size: 4.2rem;
     }
 
     #fewBrands .container .col-md-3 img {
-        padding: 2rem;
-        height: 22.4rem;
-        width: 100%;
+        padding: 4rem 15rem ;
+        height: 15rem;
     }
+    
     #hero {
         height: 90vh;
         width: 100%;
@@ -465,22 +480,10 @@ and the effect that shows we're in a particular page
         font-size: 2.5rem;
     }
 
-    #fewBrands .brandTalk {
-
-        text-align: center;
-    }
-
-    #fewBrands .brandTalk h1 {
-        font-size: 4.2rem;
-    }
-
-    #fewBrands .container .col-md-3 img {
-        padding: 5rem;
-        height: 23rem;
-    }
+    
 
     #experience .col-md-6 h2 {
-        font-size: 5.2rem;
+        font-size: 3.8rem;
     }
 
     #experience .container .col-md-6 h6 {
@@ -499,7 +502,7 @@ and the effect that shows we're in a particular page
 
 
     #familiar .col-md-6 h2 {
-        font-size: 5.2rem;
+        font-size: 3.8rem;
     }
 
     #familiar .container .col-md-6 h6 {
@@ -515,6 +518,20 @@ and the effect that shows we're in a particular page
         font-size: 1.5rem;
         font-weight: 500;
     }
+    
+    #fewBrands .brandTalk {
+
+        text-align: center;
+    }
+
+    #fewBrands .brandTalk h1 {
+        font-size: 4.2rem;
+    }
+
+    #fewBrands .container .col-md-3 img {
+        padding: 4rem 15rem ;
+        height: 15rem;
+    }
 
     #doubt .brandTalk2 {
 
@@ -524,6 +541,7 @@ and the effect that shows we're in a particular page
     #doubt .brandTalk2 h1 {
         font-size: 4.2rem;
         font-weight: 600;
+        text-align: center;
         
     } 
 
