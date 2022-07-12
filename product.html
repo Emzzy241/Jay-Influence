@@ -28,11 +28,37 @@
 
         <div>
             <ul id="navbar">
-                <li><a  href="./index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a class="active" href="./product.html">Get Card</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./cart.html"><i class="fas fa-shopping-bag"></i></a></li>
-                <!--  -->
+                <i class="bx bx-shopping-bag" id="cart-icon">cart</i>
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- Content -->
+                    <div class="cart-content">
+
+                        <div class="cart-box">
+                            <img src="./img/3WhiteRockandRole.jpg" alt="" class="cart-img" >
+                            <div class="detail-box">
+                                <div class="cart-product-title">A Month Music Promotion</div>
+                                <div class="cart-price">₦1,200,000</div>
+                                <input type="number" value="1" class="cart-quantity">
+                            </div>
+                            <!-- Remove Cart -->
+                            <i class="bx-bxs-trash-alt cart-remove">re</i>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">₦0</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy">Buy Now</button>
+                    <!-- Cart Close -->
+                    <i class="bx bx-x" id="close-cart">X</i>
+                </div>
             </ul>
         </div>
 
@@ -70,23 +96,30 @@
 
     <!-- The Products section starts  -->
 
+    
+
     <section id="products" class="products">
         <div class="container-fluid">
             <div class="row">
 
                 <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
+
                     <a href=""><img src="./img/2adidas.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Client Content Post on Page</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦250,000.00</h6>
+                        <span></span>
+                        <i class="bx bx-shopping-bag add-cart" id="cart-icon">cart</i>
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
                     <a href=""><img src="./img/3WhiteRockandRole.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>My Content on Story</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦150,000.00</h6>
                     </div>
                 </div>
@@ -94,7 +127,8 @@
                     <a href=""><img src="./img/2NEWSWAGY.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Insta Story</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦40,000.00</h6>
                     </div>
                 </div>
@@ -102,17 +136,19 @@
                     <a href=""><img src="./img/1Nike.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>My Video/Picture Content on <br> Page</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦370,000.00</h6>
                     </div>
                 </div>
 
-                
+
                 <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
                     <a href=""><img src="./img/2adidas.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>A Post wearing any of your <br> Products</h4>
-                        <p>ADVERT,INFLUENCING</p> <hr>
+                        <p>ADVERT,INFLUENCING</p>
+                        <hr>
                         <h6>₦100,000.00</h6>
                     </div>
                 </div>
@@ -120,7 +156,8 @@
                     <a href=""><img src="./img/3WhiteRockandRole.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Campaign Shoot(Video/Photo)</h4>
-                        <p>INFLUENCING</p> <hr>
+                        <p>INFLUENCING</p>
+                        <hr>
                         <h6>₦500,000.00</h6>
                     </div>
                 </div>
@@ -128,7 +165,8 @@
                     <a href=""><img src="./img/2NEWSWAGY.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Snap Story Advert</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦30,000.00</h6>
                     </div>
                 </div>
@@ -136,17 +174,19 @@
                     <a href=""><img src="./img/1Nike.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Snapchat 1 month influencing <br> (First Package)</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦700,000.00</h6>
                     </div>
                 </div>
 
-                
+
                 <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
                     <a href=""><img src="./img/2adidas.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Twitter 1 week </h4>
-                        <p>ADVERT,INFLUENCING,PROMOTION</p> <hr>
+                        <p>ADVERT,INFLUENCING,PROMOTION</p>
+                        <hr>
                         <h6>₦100,000.00</h6>
                     </div>
                 </div>
@@ -154,7 +194,8 @@
                     <a href=""><img src="./img/3WhiteRockandRole.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Twitter 1 day(2-3 tweets)</h4>
-                        <p>ADVERT,INFLUENCING,PROMOTION</p> <hr>
+                        <p>ADVERT,INFLUENCING,PROMOTION</p>
+                        <hr>
                         <h6>₦24,000.00</h6>
                     </div>
                 </div>
@@ -162,7 +203,8 @@
                     <a href=""><img src="./img/2NEWSWAGY.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>1 Month Influencing Package</h4>
-                        <p>INFLUENCING</p> <hr>
+                        <p>INFLUENCING</p>
+                        <hr>
                         <h6>₦750,000.00</h6>
                     </div>
                 </div>
@@ -170,17 +212,19 @@
                     <a href=""><img src="./img/1Nike.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Snapchat 1 month influencing <br>(Second Package)</h4>
-                        <p>ADVERT</p> <hr>
+                        <p>ADVERT</p>
+                        <hr>
                         <h6>₦650,000.00</h6>
                     </div>
                 </div>
 
-                  
+
                 <div class="col-md-3 col-xs-3 col-sm-3 col-lg-3">
                     <a href=""><img src="./img/2adidas.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>A month Music Promotion</h4>
-                        <p>PROMOTION</p> <hr>
+                        <p>PROMOTION</p>
+                        <hr>
                         <h6>₦1,200,000.00</h6>
                     </div>
                 </div>
@@ -188,7 +232,8 @@
                     <a href=""><img src="./img/3WhiteRockandRole.jpg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Music Promotion(TikTok)</h4>
-                        <p>PROMOTION</p> <hr>
+                        <p>PROMOTION</p>
+                        <hr>
                         <h6>₦80,000.00</h6>
                     </div>
                 </div>
@@ -196,7 +241,8 @@
                     <a href=""><img src="./img/2NEWSWAGY.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Music Promotion(Triller)</h4>
-                        <p>PROMOTION</p> <hr>
+                        <p>PROMOTION</p>
+                        <hr>
                         <h6>₦50,000.00</h6>
                     </div>
                 </div>
@@ -204,7 +250,8 @@
                     <a href=""><img src="./img/1Nike.jpeg" alt="Products" width="100%" height="430px"></a>
                     <div class="productTalk">
                         <h4>Music Promotion(Instagram)</h4>
-                        <p>PROMOTION</p> <hr>
+                        <p>PROMOTION</p>
+                        <hr>
                         <h6>₦350,000.00</h6>
                     </div>
                 </div>
@@ -212,9 +259,10 @@
             </div>
         </div>
     </section>
-    
-        <!-- The Products section starts  -->
 
+    <!-- The Products section starts  -->
+
+    <script src="./js/scripts.js"></script>
 
 </body>
 

@@ -20,3 +20,6 @@ var swiper = new Swiper(".review-slider", {
       },
     },
   });
+
+
+// Javascript for the add to cart 
