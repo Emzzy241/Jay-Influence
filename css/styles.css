@@ -289,7 +289,7 @@ and the effect that shows we're in a particular page
 }
 
 #fewBrands .container .col-md-3 img {
-    padding: 4rem 5rem ;
+    padding: 4rem 5rem;
     height: 19rem;
 }
 
@@ -307,23 +307,69 @@ and the effect that shows we're in a particular page
 
 /* Styling the still in doubt section  */
 
-#doubt .brandTalk2 p{
+#doubt .brandTalk2 p {
     text-align: center;
     font-weight: 600;
 }
 
 #doubt .brandTalk2 h1 {
     text-align: center;
-    font-weight: 800;    
-    
+    font-weight: 800;
+
 }
 
 #doubt .brandTalk2 h1 span {
     color: #088178;
 }
 
+/* Styling the let's make a deal section  */
 
+#deal {
+    width: 100%;
+    text-align: center;
+    margin-top: 15rem;
+}
 
+#deal .col-md-12 p {
+    margin-top: 7rem;
+    color: rgb(148, 145, 145);
+    font-weight: 600;
+}
+
+#deal .col-md-12 h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+/* styling the button for the deal section  */
+#deal button {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+}
+
+.butnn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* background-color: black;  don't need it for this website*/
+}
+
+/* making the link look nice  */
+.butnn a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.0rem;
+}
 
 
 
@@ -405,7 +451,7 @@ and the effect that shows we're in a particular page
         padding: 2rem;
     }
 
-   
+
 }
 
 
@@ -425,10 +471,10 @@ and the effect that shows we're in a particular page
     }
 
     #fewBrands .container .col-md-3 img {
-        padding: 4rem 15rem ;
+        padding: 4rem 15rem;
         height: 15rem;
     }
-    
+
     #hero {
         height: 90vh;
         width: 100%;
@@ -441,21 +487,24 @@ and the effect that shows we're in a particular page
         justify-content: center;
     }
 
-    #hero h6{
+    #hero h6 {
         padding: 2rem;
-        
+
     }
-    #hero h1{
+
+    #hero h1 {
         padding: 2rem;
         line-height: 6.5rem;
         font-size: 4.8rem;
     }
-    #hero h2{
+
+    #hero h2 {
         padding: 2rem;
         line-height: 5.0rem;
         font-size: 4.1rem;
     }
-    #hero p{
+
+    #hero p {
         padding: 2rem;
     }
 
@@ -480,7 +529,7 @@ and the effect that shows we're in a particular page
         font-size: 2.5rem;
     }
 
-    
+
 
     #experience .col-md-6 h2 {
         font-size: 3.8rem;
@@ -518,7 +567,7 @@ and the effect that shows we're in a particular page
         font-size: 1.5rem;
         font-weight: 500;
     }
-    
+
     #fewBrands .brandTalk {
 
         text-align: center;
@@ -529,7 +578,7 @@ and the effect that shows we're in a particular page
     }
 
     #fewBrands .container .col-md-3 img {
-        padding: 4rem 15rem ;
+        padding: 4rem 15rem;
         height: 15rem;
     }
 
@@ -542,7 +591,36 @@ and the effect that shows we're in a particular page
         font-size: 4.2rem;
         font-weight: 600;
         text-align: center;
-        
-    } 
+
+    }
+
+    /* making the deal section responsive  */
+
+
+    #deal {
+        width: 100%;
+        text-align: center;
+        margin-top: 15rem;
+    }
+
+    #deal .col-md-12 p {
+        margin-top: 7rem;
+        color: rgb(148, 145, 145);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    #deal .col-md-12 h2 {
+        color: #fff;
+        font-weight: 800;
+        font-size: 4.2rem;
+    }
+
+    #deal button {
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+    }
+
+
 
 }
