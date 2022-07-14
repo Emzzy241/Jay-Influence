@@ -553,7 +553,7 @@ and the effect that shows we're in a particular page
 .cart {
     position: fixed;
     top: 0; 
-    right: 0;
+    right: -110%;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
@@ -649,6 +649,12 @@ and the effect that shows we're in a particular page
 .btn-buy:hover{
     background: var(--black);
 }
+
+.btn-buy span a{
+    color: #fff;
+    text-decoration: none;
+}
+
 #close-cart{
     position: absolute;
     top: 1rem;
