@@ -46,8 +46,23 @@ function ready() {
 
   }
   // Buy button working 
+  // alert for the buy button
+  document
+  .getElementsByClassName("btn-buy")[0]
+  .addEventListener("click", buyButtonClicked);
   
 }
+
+// Buy button 
+function buyButtonClicked(){
+  alert("Your Order is placed");
+  var cartContent = document.getElementsByClassName("cart-content")[0]
+  while (cartContent.hasChildNodes()){
+    cartContent.removeChild(cartContent.firstChild);
+  }
+}
+
+
 
 // Remove items from cart
 
