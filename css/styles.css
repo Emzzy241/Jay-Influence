@@ -553,7 +553,7 @@ and the effect that shows we're in a particular page
 .cart {
     position: fixed;
     top: 0; 
-    right: -110%;
+    right: -100%;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
@@ -700,8 +700,11 @@ and the effect that shows we're in a particular page
 }
 
 
-
-
+/* The info section  */
+#info{
+    margin-top: 10rem;
+    
+}
 
 
 
@@ -756,8 +759,24 @@ and the effect that shows we're in a particular page
         padding: 2rem;
     }
 
+    
+}
 
+/* Media query for our cart: Making responsive */
 
+@media (max-width: 400px){
+    .logo{
+        padding: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px){
+    .cart{
+        width: 280px;
+    }
 }
 
 
@@ -833,6 +852,10 @@ and the effect that shows we're in a particular page
 
     .heading h2 {
         font-size: 2.5rem;
+    }
+
+    #navbar li a{
+        
     }
 
 
@@ -946,6 +969,12 @@ and the effect that shows we're in a particular page
 
     .productTalk h6 {
         font-size: 1.8rem;
+    }
+
+    /* The info section  */
+    #info p{
+        font-size: 1rem;
+        font-weight: 900;
     }
 
 

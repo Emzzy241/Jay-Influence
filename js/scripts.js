@@ -45,7 +45,7 @@ function ready() {
     button.addEventListener("click", addCartClicked);
 
   }
-  // Buy button working 
+  // Buy button working but not using it for now
   // alert for the buy button
   document
   .getElementsByClassName("btn-buy")[0]
@@ -53,16 +53,17 @@ function ready() {
   
 }
 
-// Buy button 
+/* Buy button 
 function buyButtonClicked(){
-  alert("Your Order is placed");
+   alert("Your Order is placed");
   var cartContent = document.getElementsByClassName("cart-content")[0]
   while (cartContent.hasChildNodes()){
     cartContent.removeChild(cartContent.firstChild);
   }
+  updateTotal();
 }
 
-
+*/
 
 // Remove items from cart
 
@@ -138,14 +139,15 @@ function updateTotal() {
     var price = parseFloat(priceElement.innerText.replace("₦", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
-    //  If price contain some kobo or cent value
-    total = Math.round(total * 100) / 100;
+   }
+   //  If price contain some kobo or cent value
+  total = Math.round(total * 100) / 100;
 
 
     document.getElementsByClassName('total-price')[0].innerText = "₦" + total;
 
 
-  }
+ 
 }
 
 
