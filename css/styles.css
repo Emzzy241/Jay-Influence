@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -96,7 +97,7 @@ body {
 #navbar li a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: 520;
+    font-weight: 400;
     color: #1a1a1a;
     transition: 0.3s ease;
 }
@@ -381,9 +382,14 @@ and the effect that shows we're in a particular page
     font-size: 2.2rem;
     margin-bottom: 5rem;
     margin-right: 1.9rem;
+    color: #088178;
 }
 
 /* Styling the footer section  */
+
+.footer{
+    margin-top: 7rem;
+}
 
 .footer .box-container {
     margin-left: 50px;
@@ -552,7 +558,7 @@ and the effect that shows we're in a particular page
 
 .cart {
     position: fixed;
-    top: 0; 
+    top: 0;
     right: -100%;
     width: 360px;
     min-height: 100vh;
@@ -562,7 +568,7 @@ and the effect that shows we're in a particular page
     transition: 0.3s;
 }
 
-.cart.active{
+.cart.active {
     right: 0;
 }
 
@@ -646,16 +652,17 @@ and the effect that shows we're in a particular page
     cursor: pointer;
 
 }
-.btn-buy:hover{
+
+.btn-buy:hover {
     background: var(--black);
 }
 
-.btn-buy span a{
+.btn-buy span a {
     color: #fff;
     text-decoration: none;
 }
 
-#close-cart{
+#close-cart {
     position: absolute;
     top: 1rem;
     right: 0.8rem;
@@ -665,11 +672,12 @@ and the effect that shows we're in a particular page
 }
 
 .add-cart {
+    
     position: absolute;
     bottom: 0;
     right: 0;
-    background: #fff;
-    color: var(--black);
+    background: #088178;
+    color: #fff;
     padding: 10px;
     cursor: pointer;
 }
@@ -687,7 +695,8 @@ and the effect that shows we're in a particular page
 }
 
 .productTalk h4 {
-    font-weight: 548;
+    font-weight: 530;
+    font-size: 1.3rem;
 }
 
 .productTalk p {
@@ -701,16 +710,91 @@ and the effect that shows we're in a particular page
 
 
 /* The info section  */
-#info{
+#info {
     margin-top: 10rem;
-    
+
+}
+
+#info span{
+    color: red;
+}
+
+#info p .fas{
+    margin-right: 1.5rem;
+    color: blue;
+    font-size: 1.8rem;
+    margin-top: 0.1rem;
+}
+
+.bx-shopping-bag{
+    background: #088178;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
+/* Styling the scroll up button section  */
+#button {
+    display: inline-block;
+    background-color: #088178;
+    width: 4.0rem;
+    height: 4.5rem;
+    line-height: 3.4rem;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s;
+    opacity: 0.5s, visibility 0.5s;
+    opacity: 0;
+    z-index: 1000;
+}
+
+#button i{
+    color: white;
+    font-size: 3.5rem;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: var(--black);
+}
+
+#button.show{
+    opacity: 1;
+
+}
+
+/* The scroll up button ends  */
 
 
+/* Styling the contact.html section  */
+
+.contactPage{
+    margin-top: 4rem;
+}
+
+.contactPage h4{
+    font-weight: 900;
+}
+
+.contactPage label{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--light-color);
+}
 
 
+.contactPage .form-control{
+    height: 4rem;
+}
+
+.contactPage span{
+    color: red;
+}
 
 
 
@@ -759,22 +843,28 @@ and the effect that shows we're in a particular page
         padding: 2rem;
     }
 
-    
+    .productTalk h4 {
+        font-weight: 530;
+        font-size: 1.9rem;
+    }
+
+
 }
 
 /* Media query for our cart: Making responsive */
 
-@media (max-width: 400px){
-    .logo{
+@media (max-width: 400px) {
+    .logo {
         padding: 1rem;
     }
-    .cart{
+
+    .cart {
         width: 320px;
     }
 }
 
-@media (max-width: 360px){
-    .cart{
+@media (max-width: 360px) {
+    .cart {
         width: 280px;
     }
 }
@@ -853,11 +943,6 @@ and the effect that shows we're in a particular page
     .heading h2 {
         font-size: 2.5rem;
     }
-
-    #navbar li a{
-        
-    }
-
 
 
     #experience .col-md-6 h2 {
@@ -972,11 +1057,21 @@ and the effect that shows we're in a particular page
     }
 
     /* The info section  */
-    #info p{
+    #info p {
         font-size: 1rem;
         font-weight: 900;
+        
+    }
+    #info p .fas{
+        margin-right: 1.5rem;
+        margin-top: 0.2rem;
     }
 
+
+    .productTalk h4 {
+        font-weight: 530;
+        font-size: 1.8rem;
+    }
 
 
 }

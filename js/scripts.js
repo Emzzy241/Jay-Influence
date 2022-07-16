@@ -48,9 +48,9 @@ function ready() {
   // Buy button working but not using it for now
   // alert for the buy button
   document
-  .getElementsByClassName("btn-buy")[0]
-  .addEventListener("click", buyButtonClicked);
-  
+    .getElementsByClassName("btn-buy")[0]
+    .addEventListener("click", buyButtonClicked);
+
 }
 
 /* Buy button 
@@ -100,10 +100,10 @@ function addProductToCart(title, price, productImg) {
     if (cartItemsNames[i].innerText == title) {
       alert("You have already added this item to cart :)");
       return;
-    
+
     }
 
-  } 
+  }
   var cartBoxContent = `
                        <img src="${productImg}" alt="" class="cart-img">
                        <div class="detail-box">
@@ -112,16 +112,16 @@ function addProductToCart(title, price, productImg) {
                             <input type="number" value="1" class="cart-quantity">
                        </div>
                        <!-- Remove Cart -->
-                       <i class="bx-bxs-trash-alt cart-remove" >re</i>`;
-cartShopBox.innerHTML = cartBoxContent;
-cartItems.append(cartShopBox);
-cartShopBox
-  .getElementsByClassName("cart-remove")[0]
-  .addEventListener("click", removeCartItem);
+                       <i class="bx bxs-trash-alt cart-remove" ></i>`;
+  cartShopBox.innerHTML = cartBoxContent;
+  cartItems.append(cartShopBox);
+  cartShopBox
+    .getElementsByClassName("cart-remove")[0]
+    .addEventListener("click", removeCartItem);
 
-cartShopBox
-  .getElementsByClassName("cart-quantity")[0]
-  .addEventListener("change", quantityChanged);
+  cartShopBox
+    .getElementsByClassName("cart-quantity")[0]
+    .addEventListener("change", quantityChanged);
 
 
 }
@@ -139,15 +139,15 @@ function updateTotal() {
     var price = parseFloat(priceElement.innerText.replace("₦", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
-   }
-   //  If price contain some kobo or cent value
+  }
+  //  If price contain some kobo or cent value
   total = Math.round(total * 100) / 100;
 
 
-    document.getElementsByClassName('total-price')[0].innerText = "₦" + total;
+  document.getElementsByClassName('total-price')[0].innerText = "₦" + total;
 
 
- 
+
 }
 
 
@@ -174,3 +174,20 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
+// the script for our scroll up button begins 
+
+var btn = $("#button");
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show")
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
+
+// the script for our scroll up button ends 
