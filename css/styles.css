@@ -867,6 +867,11 @@ and the effect that shows we're in a particular page
         font-weight: 530;
         font-size: 1.9rem;
     }
+    .logo{
+        height: 6.5rem;
+        width: 5rem;
+
+    }
 
 
 }
