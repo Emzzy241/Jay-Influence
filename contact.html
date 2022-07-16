@@ -9,6 +9,9 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/styles.css">
+
+        <!-- Linking jQuery for the scroll up button  -->
+        <script src="./js/jquery-3.6.0.js"></script>
     
         <title>Jay - Social media Influencer</title>
     
@@ -90,30 +93,108 @@
 
     <!-- The info section ends  -->
 
+    <!-- The scroll up button section begins  -->
+
+    <a id="button">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <!-- The scroll up button section ends  -->
+
 
     <!-- The form section starts  -->
 
     <section class="contactPage container">
         <h4>Contact me</h4>
         <form action="" class="form-group container">
-            <label for="">Name <span>*</span>:</label>
-            <input type="text" class="form-control">
+            <label for="">Name <span>*</span></label>
+            <input type="text" class="form-control" required>
 
-            <label for="">Name:</label>
-            <input type="text" class="form-control">
+            <label for="">Business Name <span>*</span></label>
+            <input type="text" class="form-control" required>
 
-            <label for="">Name:</label>
-            <input type="text" class="form-control">
+            <label for="">Email <span>*</span></label>
+            <input type="email" class="form-control">
 
-            <label for="">Name:</label>
-            <input type="text" class="form-control">
+            <label for="">Phone</label>
+            <input type="number" class="form-control">
 
+            <label for="">Message</label>
+            <input type="text" class="form-control message">
+
+            <label for="">Upload Image/Screenshot if required</label>
+            <input type="file" class="form-control" style="background-color: #222; color: #fff">
+
+            <button type="submit">Submit</button>
+                
         </form>
     </section>
 
 
 
-    <!-- The form section starts  -->
+    <!-- The form section ends  -->
+
+
+
+     <!-- The footer section starts  -->
+
+     <section id="footer" class="footer bg-dark one">
+        <div class="box-container"> 
+            <div class="box">
+                <h2>Jay Influence</h2>
+                <h6>A well known Social media Influencer, <br> Host and Mentor</h6>
+
+                <img src="./img/payment.png" alt="">
+            </div>
+            <div class="box">
+                <h4>Policies</h4>
+                <p><a href="#" class="links">Privacy</a></p>
+                <p><a href="#" class="links">Terms</a></p>
+            </div>
+            <div class="box">
+                <h4>Company</h4>
+                <p><a href="./product.html" class="links">Promotion</a></p>
+                <p><a href="./contact.html" class="links">Contact</a></p>
+                <h5>Follow me</h5>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- The footer section ends  -->
+
+     <!-- The script for the scroll up button begins -->
+     <script type="text/javascript">
+
+        var btn = $("#button");
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass("show");
+            } else {
+                btn.removeClass("show")
+            }
+        });
+
+        btn.on("click", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "300");
+        });
+    </script>
+    <!-- The script for the scroll up button ends -->
+
+    
+
+
+    <script src="./js/scripts.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
    
 </body>
 </html>

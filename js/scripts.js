@@ -47,9 +47,10 @@ function ready() {
   }
   // Buy button working but not using it for now
   // alert for the buy button
-  document
-    .getElementsByClassName("btn-buy")[0]
-    .addEventListener("click", buyButtonClicked);
+
+  // document
+  //   .getElementsByClassName("btn-buy")[0]
+  //   .addEventListener("click", buyButtonClicked);
 
 }
 
@@ -176,18 +177,5 @@ var swiper = new Swiper(".review-slider", {
 
 // the script for our scroll up button begins 
 
-var btn = $("#button");
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
-  } else {
-    btn.removeClass("show")
-  }
-});
-
-btn.on("click", function (e) {
-  e.preventDefault();
-  $("html, body").animate({ scrollTop: 0 }, "300");
-});
 
 // the script for our scroll up button ends 

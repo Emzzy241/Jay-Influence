@@ -375,10 +375,11 @@ and the effect that shows we're in a particular page
 /* Styling the contact section  */
 #contact {
     text-align: center;
+    
 }
 
 #contact .contactLinks i {
-    margin-top: 5rem;
+    margin-top: 3rem;
     font-size: 2.2rem;
     margin-bottom: 5rem;
     margin-right: 1.9rem;
@@ -387,7 +388,7 @@ and the effect that shows we're in a particular page
 
 /* Styling the footer section  */
 
-.footer{
+.one{
     margin-top: 7rem;
 }
 
@@ -396,6 +397,11 @@ and the effect that shows we're in a particular page
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+}
+
+.footer .fab{
+    margin-right: 3rem;
+    color: #fff;
 }
 
 
@@ -465,6 +471,7 @@ and the effect that shows we're in a particular page
 
 .footer .box-container .box i:hover {
     color: #fff;
+    cursor: pointer;
 }
 
 /* Styling the product.html  */
@@ -737,19 +744,20 @@ and the effect that shows we're in a particular page
 /* Styling the scroll up button section  */
 #button {
     display: inline-block;
-    background-color: #088178;
+    background-color: #fff;
     width: 4.0rem;
-    height: 4.5rem;
+    height: 4.0rem;
     line-height: 3.4rem;
     text-align: center;
     border-radius: 4px;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 20px;
     transition: background-color 0.3s;
     opacity: 0.5s, visibility 0.5s;
     opacity: 0;
     z-index: 1000;
+    border-radius: 50%;
 }
 
 #button i{
@@ -759,7 +767,7 @@ and the effect that shows we're in a particular page
 
 #button:hover{
     cursor: pointer;
-    background-color: var(--black);
+    background-color: #088178;
 }
 
 #button.show{
@@ -789,11 +797,23 @@ and the effect that shows we're in a particular page
 
 
 .contactPage .form-control{
-    height: 4rem;
+    height: 3.5rem;
 }
 
 .contactPage span{
     color: red;
+}
+
+.contactPage .message{
+    height: 15rem;
+}
+
+.contactPage button{
+    margin-top: 4rem;
+    background-color: #222;
+    color: #fff;
+    height: 3.5rem;
+    width: 7rem;
 }
 
 
@@ -1074,4 +1094,14 @@ and the effect that shows we're in a particular page
     }
 
 
+}
+
+ /* media query for the scroll up button */
+ @media (min-width:500px){
+    .contentScroll{
+        width: 43%;
+    }
+    #button{
+        margin: 30px;
+    }
 }

@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
 
+
+    <!-- linking jQuery: used for the scroll up button  -->
+    <script src="./js/jquery-3.6.0.js"></script>
+
     <title>Jay - Social media Influencer</title>
+
+
 
     <!-- Font aweseome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -21,7 +27,7 @@
 
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 
 <body>
@@ -41,7 +47,7 @@
                     <h2 class="cart-title">Your Cart</h2>
                     <!-- Content -->
                     <div class="cart-content">
- 
+
                     </div>
                     <!-- Total -->
                     <div class="total">
@@ -49,7 +55,8 @@
                         <div class="total-price">₦</div>
                     </div>
                     <!-- Buy Button -->
-                    <button type="button" class="btn-buy"><span><a href="https://www.instagram.com/emmanuel.9944/">Buy Now</a></span></button>
+                    <button type="button" class="btn-buy"><span><a href="https://www.instagram.com/emmanuel.9944/">Buy
+                                Now</a></span></button>
                     <!-- Cart Close -->
                     <i class="bx bx-x" id="close-cart">X</i>
                 </div>
@@ -87,13 +94,13 @@
 
     <!-- The info section ends  -->
 
-    
+
     <!-- The scroll up button section begins  -->
 
-    <a id="button"> 
-        <i class="fas fa-angle-up">ab</i>
+    <a id="button">
+        <i class="fas fa-angle-up"></i>
     </a>
-    
+
 
     <!-- The scroll up button section ends  -->
 
@@ -314,16 +321,29 @@
     <!-- The Products section ends  -->
 
 
-     
 
 
-     <script type="text/javascript">
-        
+    <!-- The script for the scroll up button begins -->
+    <script type="text/javascript">
+
+        var btn = $("#button");
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass("show");
+            } else {
+                btn.removeClass("show")
+            }
+        });
+
+        btn.on("click", function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "300");
+        });
     </script>
+    <!-- The script for the scroll up button ends -->
 
 
-    
-    
+
 
 
 
@@ -332,8 +352,8 @@
 
     <!-- The footer section starts  -->
 
-    <section id="footer" class="footer bg-dark">
-        <div class="box-container"> 
+    <section id="footer" class="footer bg-dark one">
+        <div class="box-container">
             <div class="box">
                 <h2>Jay Influence</h2>
                 <h6>A well known Social media Influencer, <br> Host and Mentor</h6>
@@ -350,9 +370,9 @@
                 <p><a href="./product.html" class="links">Promotion</a></p>
                 <p><a href="./contact.html" class="links">Contact</a></p>
                 <h5>Follow me</h5>
-                <i class="fab fa-instagram"><a href="https://www.instagram.com/emmanuel.9944/">Insta</a></i>
-            <i class="fab fa-snapchat-ghost"></i><a href="https://www.instagram.com/emmanuel.9944/">Twitter</a></i>
-            <i class="fab fa-twitter"><a href="https://www.instagram.com/emmanuel.9944/">Linkedin</a></i>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="https://www.instagram.com/emmanuel.9944/"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </section>
@@ -364,6 +384,10 @@
 
 
     <script src="./js/scripts.js"></script>
+
+
+    <!-- linking bootstrap: used for the scroll up button  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 
