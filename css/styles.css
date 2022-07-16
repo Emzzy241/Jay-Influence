@@ -132,7 +132,7 @@ and the effect that shows we're in a particular page
 /* Done with the navigation: styling the home page */
 
 #hero {
-    background-image: url(../img/bannerBg2.jpg);
+    background-image: url(../img/brandStand.jpg);
     height: 90vh;
     width: 100%;
     background-position: top 25% right 0%;
@@ -148,9 +148,17 @@ and the effect that shows we're in a particular page
 #hero h4 {
     padding-bottom: 15px;
 }
+#hero h6{
+    color: #fff;
+}
+
+#hero p{
+    color: #fff;
+}
 
 #hero h2 {
     font-weight: 600;
+    color: #fff;
 }
 
 #hero h1 {
